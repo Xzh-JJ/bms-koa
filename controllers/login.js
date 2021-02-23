@@ -5,8 +5,8 @@ const loginIn = async (ctx) => {
   const user = ctx.request.body
   const data = await Login.findOne({
     where: {
-      name: {
-        [Op.eq]: `${user.userName}`
+      username: {
+        [Op.eq]: `${user.username}`
       },
       password: user.password
     }

@@ -8,7 +8,7 @@ const login = sequelize.define('login', {
     primaryKey: true,
     autoIncrement: true
   },
-  name: {
+  username: {
     type: Sequelize.STRING,
     unique: {
       msg: '已添加'
